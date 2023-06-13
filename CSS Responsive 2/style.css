@@ -1,0 +1,65 @@
+body{
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+div{
+    width: 77px;
+    height:55px;
+    margin: 25px;
+    color: rgb(238, 114, 114);
+    background-color: darkblue;
+    transition: 2s;
+}
+
+div:nth-child(1){
+    transform: rotate(45deg);
+}
+
+
+div:nth-child(2):hover{
+    transform: skewX(45deg) ;
+}
+
+div:nth-child(4){
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+div:nth-child(5):hover{
+  transform:scale(0.5);
+  transition:1s;
+}
+
+@keyframes animation {
+    
+     0% {
+  }
+  25% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  50% {
+    transform: translateX(100px) rotateZ(360deg);
+  }
+  75% {
+    transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+  }
+}
+
+
+
+button{
+    padding:15px 100px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 3px 4px rgb(124, 120, 120) ;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: translate(15px, 15px);
+    box-shadow: 3px 4px 3px rgb(124, 120, 120);
+}

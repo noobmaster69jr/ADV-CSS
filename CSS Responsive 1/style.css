@@ -1,0 +1,41 @@
+*{
+    font-size: 10px;
+}
+
+/*
+ px- fixed size
+ rem - x*root-fontsize (prefer using it over px)
+em - x*closeparent-fontsize (use for padding and margin) so when fontsize change it affects
+padding and margin accordingly
+vh - viewport height 
+vw - viewport width
+*/
+.wrapper{
+    font-size: 5rem;
+}
+.title{
+    font-size: 3rem;
+}
+.subtitle{
+    font-size: 2em;
+}
+@media screen and (max-width:500px){
+    .title{
+        font-size:1em;
+        color: lightseagreen
+    }
+    .subtitle{
+        color: cyan;
+        font-size: 2rem;
+    }
+}
+
+@media (Orientation:landscape) {
+    body{
+        background-color: rgb(231, 161, 161);
+    }
+}
+
+/* if there are multiple same selectors selected then selectors close to end of file takes precedence*/
+/* so write default values at top of the css and specific comes down , css follows top to bottom 
+approach*/
