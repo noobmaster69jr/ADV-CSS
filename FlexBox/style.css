@@ -1,0 +1,35 @@
+.container{
+    height:70vh;
+    width: 80vw;
+    background-color: antiquewhite;
+    border: 1px solid rgb(153, 3, 3);
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.ele{
+    border: 1px solid rgb(6, 250, 6);
+    background-color: grey;
+}
+.ele1{
+    width:100px;
+    height:100px;
+    flex-grow:1; 
+    /* how much of the remaining space in the flex container should be assigned to the item*/
+}
+
+.ele2{
+     width:100px;
+    height:200px;
+    flex-grow:1;
+    -order:1;
+}
+
+.ele3{
+    -flex-basis: 200px; /*sets the initial size of the content box*/
+     width:100px;
+    height:300px;
+    flex-grow:1;
+}
